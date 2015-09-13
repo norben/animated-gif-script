@@ -1,3 +1,3 @@
 # animated-gif-script
 
-This that uses imagemagick tools to generate a animated gif
+This script uses [imagemagick](http://www.imagemagick.org/) tools to generate a animated gif

@@ -9,7 +9,7 @@
 # Description
 #
 # This script :
-# - creates an animated gif using imagemagick tools
+# - creates an animated gif using imagemagick tools (See http://www.imagemagick.org)
 # - from a selected region of the screen (user has to draw a rectangle using the mouse)
 # - saves the image in this default folder : ${HOME}/Images/norben_animated_gifs
 #######################
