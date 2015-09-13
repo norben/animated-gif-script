@@ -32,6 +32,8 @@ image_extension="gif"
 default_duration_in_seconds=4
 default_frequency_per_second=1
 
+delete_temporary_images="1"
+
 norben_date=`date +"%Y%m%d-%H%M%S"`
 
 declare -a tab_error
@@ -97,7 +99,10 @@ done
 
 "${cmd_convert}" -delay 100 -loop 0 "${image_name}_${norben_date}_*.${image_extension}" "anim_${image_name}_${norben_date}.gif"
 
-rm -f "${image_name}"_"${norben_date}"_*."${image_extension}"
-rm -f "${img_test_file}"
+if [ ${delete_temporary_images} == "0" ]
+then
+  rm -f "${image_name}"_"${norben_date}"_*."${image_extension}"
+  rm -f "${img_test_file}"
+fi
 
 exit 0
