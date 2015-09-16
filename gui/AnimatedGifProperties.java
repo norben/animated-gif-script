@@ -1,3 +1,9 @@
+/*
+* @Author        norben
+* License        MIT (See https://github.com/norben/animated-gif-script/blob/master/LICENSE.md)
+* Created        2015 09 16
+* Last modified  2015 09 16
+*/
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
